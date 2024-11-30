@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-color: rgb(133, 125, 125);
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+nav {
+  background-color: white;
+  color: #222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 50px;
+  border-radius: 30px;
+}
+nav button {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 16px 16px;
+  color: white;
+  background: rgb(133, 125, 125);
+  cursor: pointer;
+}
+
+.header {
+  background-color: rgb(160, 94, 94);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.squares {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 15px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  margin: 10px;
+  border-radius: 20% 10%;
+}
+.fade {
+  opacity: 0;
+  transition: all 0.5s;
+}
